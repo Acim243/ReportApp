@@ -39,5 +39,5 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-URL::forceScheme('https');
+// URL::forceScheme('https');
 require __DIR__.'/auth.php';
